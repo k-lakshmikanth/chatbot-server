@@ -1,0 +1,12 @@
+tasks:
+  - name: ollama
+    init: curl -fsSL https://ollama.com/install.sh | sh
+    command: clear && ollama serve
+
+  - name: n8n
+    init: npm install n8n -g
+    command: clear && n8n start --tunnel
+
+  - name: open-webui
+    init: pip install open-webui
+    command: clear && open-webui serve

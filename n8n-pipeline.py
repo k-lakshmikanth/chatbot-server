@@ -13,7 +13,7 @@ class Pipeline:
     def __init__(self):
         self.name = "N8N Agent Pipeline"
         self.api_url = "http://localhost:5678/webhook/chatbot"     # Set correct hostname
-        self.api_key = os.environ["N8N_API_KEY"]                                    # Insert your actual API key here
+        self.api_key = ""                                    # Insert your actual API key here
         self.verify_ssl = True
         self.debug = False
         # Please note that N8N do not support stream reponses

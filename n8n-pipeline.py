@@ -80,4 +80,4 @@ class Pipeline:
                 print(f"Failed to parse JSON from line. Error: {str(e)}")
                 yield "Error in JSON parsing."
         else:
-            yield f"Workflow request failed with status code: {response.status_code}"
+            yield f"Workflow request failed with status code: {response.status_code}\nerror: {response}"
